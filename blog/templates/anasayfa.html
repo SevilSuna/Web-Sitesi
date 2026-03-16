@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benim Siber Vatan Blogum</title>
+</head>
+<body>
+    <h1>Blog Sayfama Hoş Geldiniz!</h1>
+    <hr>
+
+    <!-- Yazıları ekrana basmak için döngü başlatıyoruz -->
+    {% for yazi in yazilar %}
+        <h2>{{ yazi.baslik }}</h2>
+        <p>{{ yazi.icerik }}</p>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
